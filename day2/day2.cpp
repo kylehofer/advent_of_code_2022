@@ -3,7 +3,6 @@
 #include <stdint.h> 
 #include "pico/stdlib.h"
 #include "day2.h"
-using namespace std;
 
 typedef struct {
     uint32_t win; 
