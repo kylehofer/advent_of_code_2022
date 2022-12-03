@@ -8,7 +8,6 @@
 
 using namespace std;
 
-
 enum ParserState {
     NEXT,
     END_OF_LINE,
@@ -223,10 +222,7 @@ int main()
 {
     stdio_init_all();
 
-    sleep_ms(5000);
-
-    printf("Beginning Execution\n");
-
+    sleep_ms(1000);
 
     printf("---- Day 1 part 1 Test ----\n");
     printf("Result: %d\n", partOne(TEST_INPUT));
