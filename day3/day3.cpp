@@ -13,6 +13,15 @@
     that would be 52 statements long
     I could also break out of a few of my calculations early when a duplicate is found. As I only need to find a single duplicate for each
     calculation, and my algorithms would actually calculate every duplicate.
+
+    I also looked into the potential to using asm to run assembly to take adventage of some specific ARM operators. Assembly can very easily make
+    effeciency worse as the compiler is generally smarter than us. However I do want to try doing the following:
+    I considered using assembly to calculate my bit values as I the ARM instruction set has some useful instruction that I thought could possibly
+    speed up my bit value calculations. ARM uses the ASR intruction to have bit shift right, and you can add an 's' suffix (ASRS) so it stores condition flags
+    based on the operation. I could use the carry condition to derive whether I dropped a 0 or 1 using the bit shift. ARM have special conditions that can be
+    added to operations that either perform the operation or perform a no-op based off the condition. For example the 'ADD' operator can be suffixed with the carry
+    flag condition 'CS' to make 'ADDCS' which would add values if the carry flag is set. This might be a fun experiment to do when I get time, however I will need
+    to spend the time to brush up on my assembly, the gcc assembly parser and also make sure it compiles correctly.
 */
 
 /**
